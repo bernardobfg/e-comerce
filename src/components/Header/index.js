@@ -4,10 +4,10 @@ import './styles.css';
 import Menu from '../Menu/index';
 import HeaderSup from '../HeaderSup/index';
 
-function Header() {
+function Header({counter}) {
     return (
         <div>
-            <HeaderSup />
+            <HeaderSup counter={ counter}/>
             
             <div className="header-container">
                 <Menu />

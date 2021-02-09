@@ -1,14 +1,19 @@
 import React, {useState} from 'react';
 import './styles.css';
-
+import Header from '../HeaderSup/index'
 import Modal from '../Modal/index'
 
 
-function Product({ id, name, price, img }) {
+
+function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}) {
 
     const real = value => {
         const options = { style: "currency", currency: "BRL" }
         return value.toLocaleString('pt-BR', options)
+    }
+
+    function incrementar() {
+        setCounter(counter+1)
     }
 
 
@@ -20,7 +25,8 @@ function Product({ id, name, price, img }) {
         setProductModal(name);
         setProductModalImg(img);
         setModalVisible(true);
-        console.log(isModalVisible);
+        incrementar();
+        
         
     }
 
@@ -30,11 +36,10 @@ function Product({ id, name, price, img }) {
         <>
             {
                 isModalVisible ? (
-                    <Modal name={productModal} img={productModalImg}/>
+                    <Modal name={productModal} img={productModalImg} onClose={ () =>setModalVisible(false)}/>
                 ): null
         }
-        
-            
+           
         <div className="product">
             
 

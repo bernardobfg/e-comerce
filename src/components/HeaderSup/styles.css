@@ -69,3 +69,19 @@
     color: #666666;
     cursor: pointer;
 }
+
+.counter{
+    background-color: red;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 3px;
+    border-radius: 100%;
+    font-size: 1em;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}

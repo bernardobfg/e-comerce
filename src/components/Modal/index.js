@@ -2,12 +2,18 @@ import React from 'react';
 import './styles.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
 
-function Modal({ name, img }) {
+function Modal({id='modal', onClose = () => { }, name, img }) {
+    
+    const handleOutsideClick = (e) => {
+        if (e.target.id == id) onClose()
+    };
+
+
     return (
-        <div className="modal">
+        <div id={id} className="modal" onClick={handleOutsideClick}>
             <div className="modal-container">
                 <div className="div-close">
-                    <button className="close">
+                    <button className="close" onClick={onClose}>
                         <AiFillCloseCircle/>
                     </button>
                 </div>
