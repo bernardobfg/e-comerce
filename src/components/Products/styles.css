@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: 'Nunito',verdana,arial;
     

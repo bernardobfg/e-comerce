@@ -54,7 +54,7 @@ function Products() {
         
     ]
     const render_products_list = products_list.map(product =>
-        <Product id={product.id} name={product.name} price={product.price} img={product.img}/>
+        <Product key={product.id} id={product.id} name={product.name} price={product.price} img={product.img}/>
         )
 
     return (
