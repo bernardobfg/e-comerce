@@ -1,0 +1,10 @@
+.products{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Nunito',verdana,arial;
+    
+    
+}
