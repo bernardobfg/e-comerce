@@ -1,20 +1,102 @@
-ul{
+.menu{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 1050px;
+    width: 1000px;
+    margin: 0 auto;
+
 }
 
-ul li{
+.menu li{
     font-size: 1.4em;
+    
 }
 
 
 .page{
     cursor: pointer;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .page:hover{
     color:rgb(82, 33, 33);
 }
+
+.hamburger{
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 3em;
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+    
+}
+
+.menu-retratil{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-retratil li{
+    font-size: 1.4em;
+    
+}
+
+@media (max-width: 995px){
+    .menu, .menu-retratil{
+        width: 100%;
+    }
+
+    .menu li{
+        margin: 0 8px;
+    }
+
+    .menu-retratil  li{
+        margin: 0 8px;
+    }
+
+    
+
+}
+
+@media (max-width: 800px){
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        margin-right: 30px;
+        display: inline;
+    }
+
+    .menu-div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-retratil{
+        list-style: none;
+        display: inline;
+        background-color: darkred;
+        position: relative;
+        width: 300px;
+        margin: 0;
+        top: 90px;
+        z-index: 100;
+    }
+    
+    .menu-retratil li{
+        font-size: 1.4em;
+        padding: 8px 0;
+        padding-left: 20px;
+        
+    }
+}
+
+
+

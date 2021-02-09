@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './styles.css';
 import Header from '../../components/Header/index';
 import Products from '../../components/Products/index';
+import Footer from '../../components/Footer';
 
 function Products_List() {
 
@@ -13,6 +14,8 @@ function Products_List() {
             <div className="products-container">
                 <Products counter={counter} setCounter={setCounter}/>
             </div>
+
+            <Footer/>
             
         </div>
         
