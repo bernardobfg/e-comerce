@@ -4,13 +4,13 @@ import './styles.css';
 import Menu from '../Menu/index';
 import HeaderSup from '../HeaderSup/index';
 
-function Header({counter}) {
+function Header({counter, setCounter}) {
     return (
         <div>
-            <HeaderSup counter={ counter}/>
+            <HeaderSup counter={counter} setCounter={setCounter}/>
             
             <div className="header-container">
-                <Menu />
+                <Menu counter={counter}/>
             </div>
         </div>
     )

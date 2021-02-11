@@ -69,3 +69,12 @@
     background-color: rgb(180, 79, 79);
     border: 1px solid goldenrod;
 }
+
+
+.quantity {
+    text-align: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 25px;
+    border-radius: 4px;
+}

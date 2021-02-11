@@ -16,11 +16,16 @@
 .page{
     cursor: pointer;
     padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .page:hover{
     color:rgb(82, 33, 33);
+    text-decoration: none;
 }
+
+
 
 .hamburger{
     color: black;

@@ -12,8 +12,8 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}
         return value.toLocaleString('pt-BR', options)
     }
 
-    function incrementar() {
-        setCounter(counter+1)
+    function incrementar(quantity) {
+        setCounter(counter+quantity)
     }
 
 
@@ -21,12 +21,16 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}
     const [productModal, setProductModal] = useState('');
     const [productModalImg, setProductModalImg] = useState('');
 
-    const showPopUp = (name, img) => {
+    const showPopUp = (name, img, id) => {
+        const quantity = parseInt(document.getElementById(id).value)
+        if (quantity == 0 || isNaN(quantity)) {
+            return
+        }
         setProductModal(name);
         setProductModalImg(img);
         setModalVisible(true);
-        incrementar();
-        
+        incrementar(quantity);
+        document.getElementById(id).value = ''
         
     }
 
@@ -50,7 +54,11 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}
             
             <p className="price">{real(price)}</p>
 
-            <button onClick={(e) => showPopUp(name,img, e)}>Adicionar ao carrinho</button>
+            <div>
+                <input id={id} type="number" className="quantity" min={0}/>
+                <button onClick={(e) => showPopUp(name,img, id, e)}>Adicionar ao carrinho</button>
+            </div>
+            
         </div>
         
         </>    

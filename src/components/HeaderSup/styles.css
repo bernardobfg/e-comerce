@@ -34,13 +34,14 @@
     
 }
 
-.div-icons a{
+.div-icons div{
     font-size: 3em;
     color: #3d3b3b;
+    border: none;
     cursor: pointer;
 }
 
-.div-icons a:hover{
+.div-icons div:hover{
     color: gainsboro;
 }
 
