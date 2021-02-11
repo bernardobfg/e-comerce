@@ -27,7 +27,7 @@ function HeaderSup({counter, setCounter, cartList, setCartList}) {
 
             <div className="div-icons">
                 <Link to={{
-                    pathname:"/conta",
+                    pathname:"/login",
                     state: {
                         counter: counter,
                         cartList: cartList

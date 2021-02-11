@@ -81,7 +81,7 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter,
             <p className="price">{real(price)}</p>
 
             <div>
-                <input id={id} type="number" className="quantity" min={0}/>
+                <input id={id} type="number" className="quantity-number" min={0}/>
                 <button onClick={(e) => showPopUp(name,img, id,price, e)}>Adicionar ao carrinho</button>
             </div>
             

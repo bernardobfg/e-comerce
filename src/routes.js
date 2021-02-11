@@ -7,6 +7,7 @@ import {
   
 import Products_List from './pages/Products_List/index'
 import Cart from './pages/Cart/index'
+import Login from './pages/Login/index'
 
 
   export default function Routes() {
@@ -19,6 +20,10 @@ import Cart from './pages/Cart/index'
 
                   <Route path="/carrinho">
                         <Cart/>
+                  </Route>
+
+                  <Route path="/login">
+                        <Login/>
                   </Route>
               </Switch>
               

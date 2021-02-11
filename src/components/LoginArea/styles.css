@@ -1,0 +1,61 @@
+.login_area_container{
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login_area_container .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.login_area_container .form #email, #password{
+    padding-left: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.login_area_container .form #log{  
+    color: #fff;
+    width: 80px;
+    background-color: green;
+    border-radius: 5px;
+    padding: 2px;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+
+.btn_log{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.login_area_container h2{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.forgot_password, .new{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 42%;
+    white-space: nowrap;
+}
+
+.extra_log{
+    display: flex;
+    justify-content: space-between;
+}
