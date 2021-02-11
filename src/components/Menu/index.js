@@ -4,34 +4,35 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 import {GiHamburgerMenu} from 'react-icons/gi'
 
-function Menu({counter}) {
+function Menu({counter, cartList}) {
     const list_menu = [
         {
             page: 'Nossa História',
-            route: '/'
+            route: '/historia'
         },
         {
             page: 'Produtos',
-            route: 'produtos'
+            route: '/'
         },
         {
             page: 'Fale Conosco',
-            route: 'fale'
+            route: '/fale'
         },
         {
             page: 'Receitas',
-            route: 'receita'
+            route: '/receita'
         },
         {
             page: 'Seja um Franqueado',
-            route: 'franquia'
+            route: '/franquia'
         }]
     const render_list_menu = list_menu.map(page =>
         <li key={list_menu.indexOf(page)}>
             <Link to={{
-                    pathname:page.page,
+                    pathname:page.route,
                     state: {
                         counter: counter,
+                        cartList: cartList
                     }
                 }} style={{textDecoration: 'none'}}>
             <div className="page">{page.page}</div>

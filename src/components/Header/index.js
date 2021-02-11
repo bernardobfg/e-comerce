@@ -10,7 +10,7 @@ function Header({counter, setCounter, cartList, setCartList}) {
             <HeaderSup counter={counter} setCounter={setCounter} cartList={ cartList} setCartList={setCartList}/>
             
             <div className="header-container">
-                <Menu counter={counter}/>
+                <Menu counter={counter} cartList={cartList}/>
             </div>
         </div>
     )

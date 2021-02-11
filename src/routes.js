@@ -13,7 +13,7 @@ import Cart from './pages/Cart/index'
       return (
           <BrowserRouter>
             <Switch>
-                  <Route exact path="/produtos">
+                  <Route exact path="/">
                         <Products_List/>
                   </Route>
 

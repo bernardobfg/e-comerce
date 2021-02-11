@@ -15,7 +15,7 @@ function Cart() {
     const cartList = state.cartList
     return (
         <div className="container">
-            <Header counter={counter} />
+            <Header counter={counter} cartList={ cartList}/>
             <div className="cart-content">
                 <UserCart cartList={ cartList}/>
             </div>

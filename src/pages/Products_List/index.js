@@ -10,9 +10,9 @@ function Products_List() {
     const { state } = useLocation();
     
     
-
-    const [counter, setCounter] = useState(0);
-    const [cartList, setCartList] = useState([])
+    console.log(state)
+    const [counter, setCounter] = useState(typeof state == 'undefined'? 0: state.counter);
+    const [cartList, setCartList] = useState(typeof state == 'undefined'? []: state.cartList)
 
 
     
