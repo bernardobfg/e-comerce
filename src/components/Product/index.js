@@ -5,7 +5,7 @@ import Modal from '../Modal/index'
 
 
 
-function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}) {
+function Product({ id, name, price, img, counter=counter ,setCounter=setCounter, cartList, setCartList}) {
 
     const real = value => {
         const options = { style: "currency", currency: "BRL" }
@@ -21,7 +21,7 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}
     const [productModal, setProductModal] = useState('');
     const [productModalImg, setProductModalImg] = useState('');
 
-    const showPopUp = (name, img, id) => {
+    const showPopUp = (name, img, id, price) => {
         const quantity = parseInt(document.getElementById(id).value)
         if (quantity == 0 || isNaN(quantity)) {
             return
@@ -31,6 +31,32 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}
         setModalVisible(true);
         incrementar(quantity);
         document.getElementById(id).value = ''
+        
+        const copy = cartList.slice()
+        let indice = 0
+        while (indice < copy.length) {
+            if (copy[indice].id == id) {
+                
+                copy[indice].quantity += quantity
+                setCartList(copy)
+                return
+            }
+            indice++
+        }
+
+
+        const product = [{
+            name: name,
+            price: price,
+            quantity: quantity,
+            id: id,
+            img: img
+        }]
+
+        const newlist = cartList.concat(product)
+        setCartList(newlist)
+        
+        
         
     }
 
@@ -56,7 +82,7 @@ function Product({ id, name, price, img, counter=counter ,setCounter=setCounter}
 
             <div>
                 <input id={id} type="number" className="quantity" min={0}/>
-                <button onClick={(e) => showPopUp(name,img, id, e)}>Adicionar ao carrinho</button>
+                <button onClick={(e) => showPopUp(name,img, id,price, e)}>Adicionar ao carrinho</button>
             </div>
             
         </div>

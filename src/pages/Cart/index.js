@@ -12,11 +12,12 @@ function Cart() {
     const { state } = useLocation();
     console.log(state)
     const counter = state.counter
+    const cartList = state.cartList
     return (
         <div className="container">
             <Header counter={counter} />
             <div className="cart-content">
-                <UserCart/>
+                <UserCart cartList={ cartList}/>
             </div>
             <Footer/>
         </div>

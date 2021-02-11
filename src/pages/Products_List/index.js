@@ -12,14 +12,15 @@ function Products_List() {
     
 
     const [counter, setCounter] = useState(0);
+    const [cartList, setCartList] = useState([])
 
 
     
     return (
         <div className="container">
-            <Header counter={counter} setCounter={ setCounter}/>
+            <Header counter={counter} setCounter={setCounter} cartList={ cartList} setCartList={setCartList}/>
             <div className="products-container">
-                <Products counter={counter} setCounter={setCounter}/>
+                <Products counter={counter} setCounter={setCounter} cartList={cartList} setCartList={setCartList}/>
             </div>
 
             <Footer/>

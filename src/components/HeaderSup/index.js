@@ -11,7 +11,7 @@ import { IoLogoAlipay } from 'react-icons/io5'
 
 
 
-function HeaderSup({counter, setCounter}) {
+function HeaderSup({counter, setCounter, cartList, setCartList}) {
     
     
     return (
@@ -30,6 +30,7 @@ function HeaderSup({counter, setCounter}) {
                     pathname:"/conta",
                     state: {
                         counter: counter,
+                        cartList: cartList
                     }
                 }} >
                     <div><FiUser className="user" /></div>
@@ -39,6 +40,7 @@ function HeaderSup({counter, setCounter}) {
                         pathname:"/carrinho",
                         state: {
                             counter: counter,
+                            cartList: cartList
                         }
                 }}>
                 <div><AiOutlineShoppingCart/></div>
