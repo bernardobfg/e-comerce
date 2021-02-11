@@ -1,23 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Header from '../../components/Header/index';
-import Footer from '../../components/Footer';
-import LoginArea from '../../components/LoginArea'
+import Footer from '../../components/Footer/index';
+
+import Receita from '../../components/Receita/index'
+
+
 
 import './styles.css';
 
 
-function Login() {
+function ReceitaPage() {
     const { state } = useLocation();
     console.log(state)
     const counter = state.counter
     const cartList = state.cartList
+
     return (
         <div className="container">
             <Header counter={counter} cartList={ cartList}/>
-            <div className="login-container">
-            <LoginArea counter={counter} cartList={ cartList}/>
+            <div >
+                <Receita/>
             </div>
             <Footer/>
         </div>
@@ -25,4 +29,4 @@ function Login() {
 }
 
 
-export default Login;
+export default ReceitaPage;

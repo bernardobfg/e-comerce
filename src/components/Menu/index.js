@@ -21,10 +21,6 @@ function Menu({counter, cartList}) {
         {
             page: 'Receitas',
             route: '/receita'
-        },
-        {
-            page: 'Seja um Franqueado',
-            route: '/franquia'
         }]
     const render_list_menu = list_menu.map(page =>
         <li key={list_menu.indexOf(page)}>

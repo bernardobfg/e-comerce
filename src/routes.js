@@ -8,6 +8,8 @@ import {
 import Products_List from './pages/Products_List/index'
 import Cart from './pages/Cart/index'
 import Login from './pages/Login/index'
+import NewUser from './pages/NewUser/index'
+import ReceitaPage from './pages/ReceitaPage/index'
 
 
   export default function Routes() {
@@ -24,6 +26,14 @@ import Login from './pages/Login/index'
 
                   <Route path="/login">
                         <Login/>
+                  </Route>
+
+                  <Route path="/cadastro">
+                        <NewUser/>
+                  </Route>
+
+                  <Route path="/receita">
+                        <ReceitaPage/>
                   </Route>
               </Switch>
               

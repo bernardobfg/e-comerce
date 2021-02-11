@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+
+import { Link, useLocation } from 'react-router-dom'
 
 import './styles.css'
 
 import Forgot from '../Forgot/index'
 
-function LoginArea() {
+function LoginArea({counter, cartList}) {
 
     const [loginList, setloginList] = useState([
         {
@@ -59,7 +61,17 @@ function LoginArea() {
                     </div>
 
                     <div className="new">
-                        <button className="btn_log">Novo por aqui? Faça já seu cadastro</button>
+                    <Link to={{
+                        pathname:"/cadastro",
+                        state: {
+                            counter: counter,
+                            cartList: cartList,
+                            loginList: loginList
+                        }
+                }}>
+                            <button className="btn_log">Novo por aqui? Faça já seu cadastro</button>
+                        </Link>
+                        
                     </div>
                 </div>
         </div>

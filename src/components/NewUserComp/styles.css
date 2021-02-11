@@ -1,0 +1,61 @@
+.cadastro_area_container{
+    width: 70%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.cadastro_area_container #email{
+    margin-top: 30px;
+    padding-left: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+#cep{
+    margin-left: 10px;
+}
+
+.cadastro_area_container #password{
+    margin-top: 10px;
+    padding-left: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+.cadastro_area_container .tel_cep, .estado_cidade, .numb_comp{
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    width: 48%;
+    border-radius: 6px;
+}
+
+#tel, #cep, #comp, #numb, #estado, #cidade, select{
+    padding-left: 5px;
+}
+
+#cadastrar{
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 80px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: green;
+    outline: none;
+    color: #fff;
+}
+
+.cadastro_area_container h2{
+    margin-top: 30px;
+}
