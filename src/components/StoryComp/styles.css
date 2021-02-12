@@ -1,0 +1,35 @@
+.story{
+    width: 80%;
+    min-height: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+.img-story{
+    margin-left: 30px;
+    width: 500px;
+}
+.first{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-story{
+    width: 500px;
+    margin-right: 40px;
+}
+
+.text-story p{
+    font-size: 1.1em;
+}
+
+.text-story h2{
+    color: darkred;
+    margin-bottom: 15px;
+}

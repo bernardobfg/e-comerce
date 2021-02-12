@@ -6,7 +6,14 @@ import Alga from '../../assets/alga.jpg';
 import Shoyu from '../../assets/shoyu.jfif';
 import Teriaky from '../../assets/teriaky.jpg';
 import Wasabi from '../../assets/wasabi2.jpg';
-import Yakissoba from '../../assets/yakissoba.jpg'
+import Yakissoba from '../../assets/yakissoba.jpg';
+import Bonecas from '../../assets/bonecas2.jpg';
+import kitJapa from '../../assets/kit-japa.jpg';
+import Vaso from '../../assets/vaso2.jpg';
+import Bonsai from '../../assets/bonsai.jpg'
+import Sake from '../../assets/sake.jpg'
+import Gergelim from '../../assets/gergelim.jpg'
+
 
 
 function Products({counter, setCounter, cartList, setCartList}) {
@@ -51,6 +58,44 @@ function Products({counter, setCounter, cartList, setCartList}) {
             price: 10.50,
             img: Yakissoba
         },
+        {
+            id: 7,
+            name: 'Kit-Japa',
+            price: 5.5,
+            img: kitJapa
+        },
+        {
+            id: 8,
+            name: 'Bonecas',
+            price: 12.50,
+            img: Bonecas
+        },
+        {
+            id: 9,
+            name: 'Vaso',
+            price: 32.00,
+            img: Vaso
+        },
+        {
+            id: 10,
+            name: 'Bonsai',
+            price: 34.50,
+            img: Bonsai
+        },
+
+        {
+            id: 11,
+            name: 'Sake',
+            price: 50.50,
+            img: Sake
+        },
+
+        {
+            id: 12,
+            name: 'Gergelim',
+            price: 4.50,
+            img: Gergelim
+        }
         
     ]
     const render_products_list = products_list.map(product =>

@@ -1,0 +1,60 @@
+.contact{
+    width: 70%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2{
+    margin-top: 40px;
+    color: darkred;
+}
+
+.contact h3{
+    display: flex;
+    align-items: center;
+}
+
+h3 .icon{
+    padding-left: 5px;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.contact-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-data .contact-email, .contact-name{
+    margin-top: 15px;
+    width: 300px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.contact-msg textarea{
+    margin-top: 20px;
+    padding-left: 5px;
+    min-width: 300px;
+    height: 120px;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+.contact-btn button{
+    background-color: green;
+    outline: none;
+    margin-top: 15px;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    cursor:pointer;
+}

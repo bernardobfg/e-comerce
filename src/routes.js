@@ -10,6 +10,8 @@ import Cart from './pages/Cart/index'
 import Login from './pages/Login/index'
 import NewUser from './pages/NewUser/index'
 import ReceitaPage from './pages/ReceitaPage/index'
+import Story from './pages/Story/index'
+import Contact from './pages/Contact/index'
 
 
   export default function Routes() {
@@ -34,6 +36,14 @@ import ReceitaPage from './pages/ReceitaPage/index'
 
                   <Route path="/receita">
                         <ReceitaPage/>
+                  </Route>
+                  
+                  <Route path="/contato">
+                        <Contact/>
+                  </Route>
+                  
+                  <Route path="/historia">
+                        <Story/>
                   </Route>
               </Switch>
               

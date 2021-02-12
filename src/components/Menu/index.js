@@ -16,12 +16,14 @@ function Menu({counter, cartList}) {
         },
         {
             page: 'Fale Conosco',
-            route: '/fale'
+            route: '/contato'
         },
         {
             page: 'Receitas',
             route: '/receita'
         }]
+    const actualRoute = window.location.pathname
+    
     const render_list_menu = list_menu.map(page =>
         <li key={list_menu.indexOf(page)}>
             <Link to={{
@@ -31,7 +33,7 @@ function Menu({counter, cartList}) {
                         cartList: cartList
                     }
                 }} style={{textDecoration: 'none'}}>
-            <div className="page">{page.page}</div>
+            <div className={page.route == actualRoute? "active": "page"}>{page.page}</div>
             </Link>
             
         </li>
