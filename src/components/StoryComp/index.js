@@ -2,14 +2,16 @@ import React from 'react'
 
 import './styles.css'
 
-import Rest1 from '../../assets/restaurante01.jpeg'
+import Rest from '../../assets/restaurante03.jfif'
+import Estoque from '../../assets/estoque.jfif'
 
 function StoryComp() {
     return (
         <div className="story">
             <div className="first">
                 <div className="img-story">
-                    <img src={Rest1 }/>
+                    <img src={Rest} />
+                    <img src={Estoque} />
                 </div>
 
                 <div className="text-story">
@@ -21,11 +23,11 @@ function StoryComp() {
                     
                     <p>
                         Mesmo frequentando os restaurantes com culinária japonesa no Brasil, Naomi sabia que aquilo estava muito
-                        longe do que ela estava habituada e sentia falta de seus hábitos alimentares antigos <br/> <br/>
+                        longe do que ela estava habituada e sentia falta de seus hábitos alimentares antigos. <br/> <br/>
                     </p>
                     
                     <p>
-                        Foi por isso que, em 2010, decidiu criar o Oishī, um novo conceito de restaurante japones, que contempla
+                        Foi por isso que, em 2010, decidiu criar o Oishī, um novo conceito de restaurante japonês, que contempla
                          verdadeiramente os melhores aspectos da culinária japonesa. Além disso, o Oishī conta com uma loja em
                         seu interior que vende insumos da melhor qualidade para que as pessoas se sintam um pouquinho dentro
                         do Japão. <br/> <br/>
